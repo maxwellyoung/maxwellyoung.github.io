@@ -1,0 +1,186 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  align-items: center;
+  color: whitesmoke;
+  background-color: rgb(0, 0, 0);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 100vh;
+  width: 80vw;
+  font-weight: 200;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 8vw;
+  color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+h2 {
+  font-weight: 400;
+  font-size: 4vw;
+  color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#lynch {
+  height: 50vh;
+  width: 50vw;
+  display: none;
+}
+
+
+h1:hover + #lynch {
+  display: block;
+  transition: 5s;
+}
+
+
+
+
+
+#developer {
+  margin: 50vh, 50vw;
+}
+
+iframe {
+  border: none;
+  
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  top: 10;
+  left: 0;
+  padding: 3rem;
+  grid-template-rows: min-content;
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  margin-top: 1em;
+gap: 30rem;}
+
+
+  @media (100px) {
+    iframe {
+      width: 50vw;
+    }
+  }
+
+  #musician {
+    width: 80vw;
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 21%
+    gap: 5rem;
+    overflow-x: auto;
+    overscroll-behaviour-inline: contain;
+  }
+  
+  #musician > * {
+    width: 80vw;
+    height: 80vh;
+  }
+  
+  .snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+  }
+
+  .snaps-inline > * {
+    scroll-snap-align: start;
+  }
+
+  
+
+ul {
+  text-transform: uppercase;
+  list-style-type: none; 
+}
+
+img {
+ height: 10px;
+}
+
+p {
+  font-size: 3vw;
+}
+
+
+a {
+  text-decoration: none;
+  color: #9658d1;
+  font-size: 3vw;
+}
+
+a:hover {
+  color: whitesmoke;
+  transition: color .5s;
+}
+
+@media (max-width: 375px) {
+  p, a {
+    font-size: 5vw;
+  }
+}
+
+nav {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-weight: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+#contact {
+  margin-top: 100vh;
+  font-size: 3vw;
+  font-weight: 200;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
