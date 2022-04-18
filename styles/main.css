@@ -5,13 +5,15 @@
 
 
 * {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+
+
 }
 
 body {
   display: flex;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
   justify-content: center;
   margin-top: 10vh;
   align-items: center;
@@ -87,21 +89,18 @@ iframe {
   aspect-ratio: 16/9;
   object-fit: cover;
   margin-top: 1em;
-gap: 30rem;}
+  ap: 30rem;
+}
 
 
-  @media (100px) {
-    iframe {
-      width: 50vw;
-    }
-  }
+
 
   #musician {
     width: 80vw;
     height: 100%;
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 21%
+    grid-auto-columns: 100%;
     gap: 5rem;
     overflow-x: auto;
     overscroll-behaviour-inline: contain;
@@ -112,6 +111,15 @@ gap: 30rem;}
     height: 80vh;
   }
   
+  @media (max-width: 400px) {
+    #musician {
+      width: 1100vw;
+      height: 1000vh;
+      grid-auto-columns: 50%;
+      gap: 1rem;
+    }
+  }
+
   .snaps-inline {
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: 1rem;
