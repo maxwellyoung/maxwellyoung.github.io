@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../styles/main.css">
   <title>Blog</title>
 </head>
-<body>
+<body id="blog-body">
   <main>
     
     <nav>
@@ -15,11 +15,17 @@
           <a href="../blog/blog.html">Blog</a>
           <a href="#contact"">Contact</a>
     </nav>
-     <div class="blog">
+     <div class="blog" class="snaps-inline">
    <div class="post">
       <h1>What are the differences between relative, absolute, and fixed positioning?</h1>
       <h3 class="date">18.04.22</h3>
-      <p>Positioning is a key part of CSS web design. It allows you to change the behaviour of different elements on the page whether text, an image, card etc. There are in total, 5 position types. These are "static", "absolute", "relative", "fixed" & "sticky". "Static" is the default or normal position type. Absolute</p>
+      <p>Positioning is a key part of CSS web design. It allows you to change the behaviour of different elements on the page whether text, an image, card etc. There are in total, 5 position types. These are "static", "absolute", "relative", "fixed" & "sticky".
+        "Static" is the default or normal position type. This will keep elements following the normal flow of the site.
+        Absolute can be a useful positioning type for specific placement ofo things like
+        Relative positioning is probably the strangest of the position types.
+        Fixed positioning works how you might expect from the title. The viewport serves as the basis for the positioning of a fixed elements. Because the viewport remains the viewport no matter where the user has scrolled or navigated to, fixed elements remain in tthe same defined space, frozen in time & space.. For example the navigation bar on this blog remains at the same position and is constantly visible even when you scroll down to view more blog posts.
+        Sticky is a hybrid of relative and fixed positioning. The element sticky positioning is applied to is treated as relative up until it crosses a defined threshold at which point the element becomes fixed, maybe until another threshold is reached. You could think of it as the stacking position. For instance on this blog, the date to the right of the screen is using sticky positioning to keep the date in the same place as you scroll through the blog post until the threshold of the next blog post is reached and the date of that post follows the same behaviour as the previous date.
+        </p>
    </div>
 
    <div class="post">
