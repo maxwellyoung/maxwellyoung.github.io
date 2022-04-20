@@ -131,17 +131,19 @@ iframe {
 
   
 
-ul {
+nav > ul {
   text-transform: uppercase;
   list-style-type: none; 
 }
+
+
 
 img {
  height: 10px;
 }
 
 p {
-  font-size: 3vw;
+  font-size: 3em;
 }
 
 
@@ -199,17 +201,16 @@ nav {
   font-weight: 200;
   font-style: italic;
 }
-.post > p {
+.post > p, ul, li {
   font-size: 1.3rem;
   font-weight: 400;
-  margin-top: -3%;
+  margin: .4%;
 }
 
 
 #contact {
   margin-top: 100vh;
-
-  font-weight: 200;
+  box-shadow: white 0px 3px 6px, whitesmoke 0px 3px 6px;
   justify-content: space-evenly;
   display: flex;
   flex-direction: row;
@@ -219,9 +220,14 @@ nav {
 
 }
 
+hr {
+  color: black;
+}
+
 #contact > a {
   color: whitesmoke;
   font-size: 2em;
+  font-weight: 200;
 }
 
 #contact >:hover {
@@ -253,11 +259,12 @@ nav {
 }
 
 body#blog-body > main > div.blog > div > h1 {
-  color: black;
+  color: #DA2C38;
 }
 
 #blog-body > main > nav > a {
-  color: black;
+  color: #DA2C38;
+  
 } 
 
 #blog-body > main > nav > a:hover {
@@ -266,11 +273,12 @@ body#blog-body > main > div.blog > div > h1 {
 
 
 #blog-body > main > #contact {
-background-color: black;
+background-color: #DA2C38;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 #blog-body > main > #contact > a:hover {
-  color: black;
+  color: #DA2C38;
   transition: color .5s;
 /* @media (max-width: 1300px) {
 
