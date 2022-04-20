@@ -3,11 +3,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 
+*, *::before, *::after {box-sizing: border-box} 
 
-* {
-
-
-}
 
 body {
   display: flex;
@@ -19,31 +16,35 @@ body {
   align-items: center;
   color: whitesmoke;
   background-color: rgb(0, 0, 0);
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 header {
   height: 100vh;
-  width: 80vw;
+  /* width: 80vw; */
   font-weight: 200;
+  max-width: 70%;
+  margin: 0 auto;
+  
 }
 
 h1 {
-  font-weight: 400;
-  font-size: 8vw;
+  font-weight: 500;
+  font-size: 7rem;
   color: whitesmoke;
   align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0;
-  
+  white-space: nowrap;
 }
+
 
 
 
 h2 {
   font-weight: 400;
-  font-size: 4vw;
+  font-size: 2rem;
   color: whitesmoke;
   align-items: center;
   justify-content: center;
@@ -55,48 +56,36 @@ h3 {
   padding: 0;
 }
 
-#lynch {
-  height: 50vh;
-  width: 50vw;
-  display: none;
-}
-
-
-h1:hover + #lynch {
-  display: block;
-  transition: 5s;
-}
-
 
 
 
 
 #developer {
-  margin: 50vh, 50vw;
+  /* margin: 50vh, 50vw; */
+  margin: 0 auto;
 }
+
+
 
 iframe {
   border: none;
-  
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
   top: 10;
   left: 0;
-  padding: 3rem;
   grid-template-rows: min-content;
   inline-size: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
   margin-top: 1em;
-  ap: 30rem;
+
 }
 
 
 
 
   #musician {
-    width: 80vw;
+    /* width: 80vw; */
     height: 100%;
     display: grid;
     grid-auto-flow: column;
@@ -107,18 +96,10 @@ iframe {
   }
   
   #musician > * {
-    width: 80vw;
-    height: 80vh;
+    margin: auto 0;
   }
   
-  @media (max-width: 400px) {
-    #musician {
-      width: 1100vw;
-      height: 1000vh;
-      grid-auto-columns: 50%;
-      gap: 1rem;
-    }
-  }
+  
 
   .snaps-inline {
     scroll-snap-type: inline mandatory;
@@ -156,31 +137,39 @@ a:hover {
   transition: color .5s;
 }
 
-@media (max-width: 375px) {
-  p, a {
-    font-size: 5vw;
-  }
-}
+
 
 nav {
   justify-content: space-between;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-
+ 
   font-weight: 200;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+    width: 100%;
 }
 
 .post {
   display: flex;
   flex-direction: column;
+  max-width: 70%;
 }
 
 
+
+.post > h1 {
+  font-size: 5vw;
+  font-weight: 200;
+  white-space: normal;
+  margin: 0 auto;
+}
+
+.post > .date {
+  position: fixed;
+  right: 10%;
+  font-size: 3rem;
+}
 
 
 #contact {
@@ -192,3 +181,19 @@ nav {
   flex-direction: row;
   align-items: center;
 }
+
+@media (max-width: 1300px) {
+  p, a {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+
+}
+
+
+
+/* @media (max-width: 1300px) {
+
+} */
