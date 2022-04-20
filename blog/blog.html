@@ -27,7 +27,11 @@
         
          <br><br><i>position: absolute;</i>
          <br><br>
-        <b>Relative</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, nihil iure! Quidem voluptatum error ex quae hic nulla provident deleniti expedita minima optio? Eveniet perspiciatis vitae at velit nulla laudantium.
+        <b>Relative</b>Relative positioning is probably the strangest of the position types.
+
+        Without other positioning declarations the element will be treated no different to a static. However when say a bottom: 10px is applied, the bottom it’ll be positioned from will be from the point the element would be without positioning declarations.
+        
+        Relative will maintain the normal flow of the document. The website CSS-Tricks puts its as “relative to itself”. If you need to define an elements “z-index” and want to remove it from the document flow, use position: absolute. If you need to define an elements “z-index” and want to maintain the document flow, use position: relative.
         <br><br>
         <i>position: relative;</i>
         
