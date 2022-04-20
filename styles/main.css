@@ -176,6 +176,7 @@ nav {
   margin-bottom: 100vh;
   max-width: 100%;
  scroll-snap-align: start;
+
 }
 
 .post > h1, p {
@@ -201,13 +202,13 @@ nav {
 .post > p {
   font-size: 1.3rem;
   font-weight: 400;
-margin-top: -3%;
+  margin-top: -3%;
 }
 
 
 #contact {
   margin-top: 100vh;
-  font-size: 3vw;
+
   font-weight: 200;
   justify-content: space-evenly;
   display: flex;
@@ -220,6 +221,11 @@ margin-top: -3%;
 
 #contact > a {
   color: whitesmoke;
+  font-size: 2em;
+}
+
+#contact >:hover {
+  color: #9658d1;
 }
 
 @media (max-width: 1300px) {
@@ -256,10 +262,16 @@ body#blog-body > main > div.blog > div > h1 {
 
 #blog-body > main > nav > a:hover {
   color: whitesmoke;
-  transition: color .5s;
+} 
+
+
+#blog-body > main > #contact {
+background-color: black;
 }
 
-
+#blog-body > main > #contact > a:hover {
+  color: black;
+  transition: color .5s;
 /* @media (max-width: 1300px) {
 
 } */
