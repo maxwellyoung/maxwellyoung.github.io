@@ -8,6 +8,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -32,10 +33,10 @@ header {
   margin-top: 30vh;
   height: 60vh;
   /* width: 80vw; */
-background-color: black;
+  color: whitesmoke;
   font-weight: 200;
   max-width: 70%;
-
+position: relative;
   
 }
 
@@ -44,7 +45,7 @@ background-color: black;
 h1 {
   font-weight: 500;
   font-size: 7rem;
-  color: whitesmoke;
+
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -137,10 +138,21 @@ nav > ul {
 }
 
 
-
-img {
- height: 10px;
+.bg-header {
+  /* display: none; */
+  background-image: url("https://images.genius.com/570a24ed541bb75064744e14647bc828.1000x1000x1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  z-index: 0;
+  padding: 20em;
+  margin-left: 50%;
+  
 }
+
+
+
+
 
 p {
   font-size: 3em;
@@ -167,6 +179,7 @@ nav {
   margin-top: 1%;
   font-weight: 200;
   position: fixed;
+  z-index: 3;
   top: 0;
   left: 0;
  
@@ -181,6 +194,10 @@ nav {
  scroll-snap-align: start;
 
 
+}
+
+#otter {
+  display: none;
 }
 
 .post > h1, p {
@@ -231,6 +248,7 @@ nav {
 
 #contact >:hover {
   color: #9658d1;
+  transition: color .5s;
 }
 
 @media (max-width: 1300px) {
@@ -268,6 +286,7 @@ body#blog-body > main > div.blog > div > h1 {
 
 #blog-body > main > nav > a:hover {
   color: black;
+  transition: color .5s;
 } 
 
 
