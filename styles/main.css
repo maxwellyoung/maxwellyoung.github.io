@@ -142,7 +142,7 @@ nav > ul {
   /* display: none; */
   background-image: url("https://images.genius.com/570a24ed541bb75064744e14647bc828.1000x1000x1.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 0%;
   position: absolute;
   z-index: 0;
   padding: 20em;
@@ -172,6 +172,7 @@ a:hover {
 
 
 
+
 nav {
   justify-content: space-around;
   display: flex;
@@ -179,7 +180,7 @@ nav {
   margin-top: 1%;
   font-weight: 200;
   position: fixed;
-  z-index: 3;
+  z-index: 1;
   top: 0;
   left: 0;
  
@@ -275,9 +276,11 @@ nav {
   }
 }
 
-body#blog-body > main > div.blog > div > h1 {
+body#blog-body > main > div.blog > div > h1 > a, h1 {
   color: #DA2C38;
 }
+
+
 
 #blog-body > main > nav > a {
   color: #DA2C38;
@@ -301,3 +304,8 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 /* @media (max-width: 1300px) {
 
 } */
+}
+header > h1 {
+  color: whitesmoke;
+}
+
