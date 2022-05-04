@@ -65,6 +65,8 @@ h2 {
 
 }
 
+
+
 h3 {
   margin: 0;
   padding: 0;
@@ -307,5 +309,15 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 header > h1 {
   color: whitesmoke;
+}
+
+.header2 {
+  
+    font-weight: 400;
+    font-size: 2rem;
+    color: black;
+    align-items: center;
+    justify-content: center;
+
 }
 
