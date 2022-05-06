@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/main.css">
+  <title>Blog</title>
+</head>
+<body id="blog-body">
+  <main>
+    
+    <nav>
+          <a href="../index.html">Home</a>
+          <a href="../blog/blog.html">Blog</a>
+          <a href="#contact"">Contact</a>
+    </nav>
+     <div class="blog" class="snaps-inline">
+      
+    <div class="post">
+      <h1>Problem Solving</h1>
+      <h3 class="date">06.06.22</h3>
+        <p>
+          Doing the whereAreYou problem I was stuck. To solve the problem you have to write a function, which is simply a reusable piece of code that you give a name that is given an array of elements and finds in each array which door Scooby is hiding behind. I managed to use a built in function called find to find Scooby in each array and save these instances to a variable (which is basically a box which I put all the found Scoobys inside) but then was confused how this corresponded to me finding the door number. I knew dot notation (which is where you can specify children of an object, such as the Scooby object I’d made) would be used on an object above the position the door number was stored in the hierarchy, but accessing it in the way I expected wasn’t working. The error message I was receiving repeatedly read that the object I’d saved the found Scoobys into was “undefined”. At this point I tried many reconfigurations of the code, did some googling and still couldn’t get anywhere. I was feeling quite defeated by how I was befuddled by such a small piece of code and doubting myself. Of course I knew I wouldn’t give up and I still had options available to me. This kind of confusion is natural having just learnt these concepts of programming. I decided to do both of the two things I thought could help me in such a stuck, frustrated state. I asked for help on the Dev Academy Discord with a snippet of my code and took a break from the question to centre myself with mindfulness activities. 
+        </p>
+        <p>
+          When I returned the help I’d gotten wasn’t working out. “I already tried this”, I’d thought. The course facilitator suggested it was an issue with function scope. I’ve learnt a bit of how important scope and am aware it’s a common reason for code errors but I still was getting the same result of my found Scooby box/object being undefined. I should’ve mentioned earlier but undefined in code means it has no qualities to it, nothing inside it, no values or properties, zilch! Well, 0 is quite different from undefined in code actually, but that’s another matter. Still feeling frustrated I took did some further research on built-in array methods to see if I was missing anything glaringly obvious, couldn’t find anything so I took a walk. On the walk I saw the facilitator had sent another message saying the previous scope suggestion was leading me down the wrong path and it was more a matter of there being an empty array that my function was checking for, an array without a door number, Scooby or anyone else for that matter! This was extremely helpful and I sighed in relief thinking this was something I could manage on my own to amend in my function. I added a conditional statement that checked for if the found Scooby object/box was undefined and made of those instances return 0, the rest would have a door number and return with that very number. I was overjoyed that this programming stuff wasn’t as beyond me as I was beginning to think, but there was still one to go..
+        </p>
+        <p><b>Pseudocode</b></p>
+        <p>
+          Pseudocode was really really helpful to break problems down step by step. before this week I saw them as an extra chore that I wasn’t seeing the full use in but then again I hadn’t done real problem solving before this week. I imagine I will rely on it now constantly. 
+        </p>
+        <p>
+          <b>Trying Something</b>
+        </p>
+        <p>
+          I was excited by the Kata idea in how there are different ways to solve a problem. Not that it’s that creative and the function you write must work in the desired way but when looking at my peers code in the Discord, I was sort of delighted that I’d reached the same conclusion in my own way.
+        </p>
+        <p>
+          <b>Rubber ducky method</b>
+        </p>
+        <p>
+          This is a great method I haven’t used yet but will try next time. I’m sure it can help with the tunnel-vision stress from being stuck too.
+        </p>
+        <p>
+          <b>Reading error messages</b>
+        </p>
+        <p>
+          This is important and I often ran code I knew would fail just because I was curious if I’d get a different error message or not. I’m not sure if this is recommended, might just be inefficient use of time, but to me it felt like another way to wrap my head around how the syntax works.
+        </p>
+        <p>
+          <b>Console.logging</b>
+        </p>
+        <p>
+          Extremely useful when things aren’t working how you expected or simply when a task is so daunting you don’t know where to begin. I’d just console.log the first thing I could to make me see what I had to work with.
+        </p>
+        <p>
+          <b>Googling</b>
+        </p>
+        <p>
+          Important! I don’t know how much to steal from other code examples online while I’m still learning but it has gotten me to understand syntax better so far. It’s just an endless rabbit hole once you start looking around which can be daunting. In the break week after foundations I hope to spend some time traversing the rabbit hole.
+        </p>
+        <p>
+          <b>Asking your peers for help</b>
+        </p>
+        <p>
+          Fantastic! It’s a beautiful thing and something I’m excited to do more. I’d love to offer others help more but am often unsure if I understand the concepts enough yet.
+        </p>
+        <p>
+          <b>Asking coaches for help</b>
+        </p>
+        <p>
+          Brilliant! Very helpful, no complaints.
+        </p>
+        <p>
+          <b>Improving your process with reflection</b>
+        </p>
+        <p>
+          Not entirely sure what this refers to, I’m guessing just going through your process and how things work which is essential in making the javascript feel more tangible than this abstract thing you switch into and out of.
+        </p>
+  </div>
+ </div>
+
+<div id="contact">  
+  <!-- include some kind of hover affect -->
+  <a href ="mailto: maxwellyoungmusic@gmail.com">Email</a>
+  <a href="https://www.instagram.com/maxwell_young/">Instagram</a>
+  <a href="https://twitter.com/internetmaxwell">Twitter</a>
+  <a href="https://github.com/maxwellyoung">Github</a>
+</div>
+</main>
+</body>
+</html>
