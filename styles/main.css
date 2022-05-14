@@ -45,7 +45,6 @@ position: relative;
 h1 {
   font-weight: 500;
   font-size: 7rem;
-
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -105,9 +104,9 @@ iframe {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 100%;
-    gap: 5rem;
+    gap: 1rem;
     overflow-x: auto;
-    overscroll-behaviour-inline: contain;
+    overscroll-behavior-inline: contain;
   }
   
   #musician > * {
@@ -149,6 +148,7 @@ nav > ul {
   z-index: 0;
   padding: 20em;
   margin-left: 50%;
+  margin-top: -15%;
   
 }
 
